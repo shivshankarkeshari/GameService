@@ -21,7 +21,7 @@ EXPOSE 8000
 # CMD ["python", "manage.py", "migrate"]
 
 RUN python manage.py migrate
-CMD ["python manage.py runserver 0.0.0.0:8000"]
+CMD ["python", "manage.py", "runserver", "0.0.0.0:8000"]
 
 # # docker build --tag django_game_service_image .
 # # docker run --name django_game_service_container -d -p 8000:8000 django_game_service_image
